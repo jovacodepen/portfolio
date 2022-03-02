@@ -752,25 +752,25 @@ footer .footer-contact-wrapper {
 }
 
 #front-end #social-landing-page {
-  background-image: url("/dist/img/social-landing.png");
+  background-image: url("./dist/img/social-landing.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #front-end #base-apparel {
-  background-image: url("/dist/img/base-apparel.png");
+  background-image: url("./dist/img/base-apparel.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #front-end #typemaster {
-  background-image: url("/dist/img/typemaster.png");
+  background-image: url("./dist/img/typemaster.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #front-end #pod-page {
-  background-image: url("/dist/img/pod-page.png");
+  background-image: url("./dist/img/pod-page.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
