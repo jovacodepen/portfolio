@@ -6,6 +6,12 @@ $maximum-blue: #62b6cbff;
 $indigo-dye: #1b4965ff;
 $columbia-blue: #cae9ffff;
 $carolina-blue: #5fa8d3ff;
+
+.primary-link {
+    text-decoration: underline;
+}
+
+
 // VARIABLES 
 $ease-transition: all 0.3s ease;
 // FONTS
@@ -220,9 +226,9 @@ nav {
         font-size: 1.5em;
         font-weight: 400;
         color: $carolina-blue;
-        padding: 0px 150px;
-        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-            padding: 0px 20px 40px;
+        padding: 0px 100px;
+        @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+            padding: 0px 60px 40px;
             font-size: 1em;
         }
     }
@@ -237,7 +243,6 @@ nav {
 #about {
     @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
         min-height: 100%;
-        padding-bottom: 100px;
     }
     #greeting {
         min-height: 200px;
@@ -261,7 +266,7 @@ nav {
                 }
             }
             .light-body {
-                width: 55%;
+                width: 80%;
                 margin: 0 auto;
                 padding-bottom: 20px;
                 @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
@@ -276,11 +281,8 @@ nav {
         position: relative;
         display: flex;
         justify-content: center;
-        min-height: 900px;
-        margin-bottom: 100px;
+        height: auto;
         @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-            min-height: 1800px;
-            padding-bottom: 80px;
             margin-bottom: 0px;
         }
         .light-body {
@@ -292,10 +294,9 @@ nav {
         &-container {
             background: white;
             border-radius: 20px;
-            position: absolute;
+            position: relative;
             top: -100px;
             padding: 20px;
-            min-height: 400px;
             height: auto;
             width: 90%;
             margin: 0 auto;
@@ -358,7 +359,7 @@ nav {
 // PROJECTS SECTION 
 #projects {
     text-align: center;
-    padding: 150px 0px;
+    padding: 20px 0px;
     margin-bottom: 150px;
     @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
         padding: 20px 20px 150px;
@@ -497,94 +498,5 @@ footer {
         justify-content: center;
         text-align: center;
         padding: 20px 0px 40px 0px;
-    }
-}
-
-// FRONTEND.HTML 
-#front-end-intro {
-    #intro {
-        padding: 100px 180px;
-        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-            padding: 80px 30px;
-        }
-    }
-    .front-end-section {
-        .light-body {
-            padding: 0px 200px;
-            @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-                padding: 0px;
-            }
-        }
-    }
-}
-
-#front-end {
-    text-align: center;
-    min-height: 800px;
-    height: auto;
-    padding: 100px 0px 150px 0px;
-    .project {
-        &-card {
-            min-height: 200px;
-            height: auto;
-            margin-top: 30px;
-            border-radius: 20px;
-            @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-                min-height: auto;
-                height: auto;
-                padding: 0px;
-            }
-            &-container {
-                height: 100%;
-                border-radius: 20px;
-                padding: 40px;
-                &-dark {
-                    background-color: rgba(27, 73, 101, 0.8);
-                }
-                &-light {
-                    background-color: rgba(202, 233, 255, 0.8);
-                }
-                &-header {
-                    &-dark {
-                        color: $columbia-blue;
-                        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-                            font-size: 2em;
-                        }
-                    }
-                    &-light {
-                        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-                            font-size: 2em;
-                        }
-                    }
-                }
-            }
-            &-row {
-                margin-bottom: 200px;
-                padding: 40px 0px;
-            }
-            .tech-list {
-                padding: 20px 0px;
-            }
-        }
-    }
-    #social-landing-page {
-        background-image: url('/dist/img/social-landing.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #base-apparel {
-        background-image: url('/dist/img/base-apparel.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #typemaster {
-        background-image: url('/dist/img/typemaster.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #pod-page {
-        background-image: url('/dist/img/pod-page.png');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
