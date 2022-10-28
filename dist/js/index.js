@@ -20,4 +20,10 @@ $('a').click(function(e) {
     }
 })();
 
+// Date for footer 
+let footerDate = document.querySelector('#date')
+let date = new Date()
+footerDate.innerHTML = date.getFullYear()
+
 AOS.init();
+
