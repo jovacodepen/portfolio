@@ -276,6 +276,22 @@ nav {
             }
         }
     }
+
+    .about-image-cell {
+        height: 500px;
+        margin-bottom: 20px;
+        @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+            height: 380px;
+        }
+    }
+
+    .about-image {
+        border-radius: 100%;
+        max-width: auto;
+        height: 100%;
+        border: solid 1px white;
+    }
+
     #resume {
         text-align: center;
         position: relative;
@@ -353,6 +369,20 @@ nav {
                 }
             }
         }
+    }
+}
+
+
+// EDUCATION SECTION
+#education {
+    .grid-x {
+        padding: 30px 0px;
+    }
+    .education-block {
+        margin: 20px 0px;
+    }
+    .education-header {
+        color: $columbia-blue;;
     }
 }
 
